@@ -1,0 +1,5 @@
+@font-face {
+	font-family: 'Metropolis Regular';
+	src: url('/fonts/Metropolis-Regular.woff') format('woff');
+	/* url("/fonts/other.woff2") format("woff2"), */
+}
