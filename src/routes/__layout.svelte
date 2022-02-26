@@ -5,11 +5,10 @@
   import "../styles/fonts.css"
 	import GridBackground from '/src/components/GridBackground/GridBackground.svelte';
   import { page } from '$app/stores';
-  console.log($page.params.slug)
 
 </script>
 
-{#if $page.params.slug != ''}
+{#if $page.url.pathname != '/'}
 <!-- <Header /> -->
 <p>Load header</p>
 {/if}
