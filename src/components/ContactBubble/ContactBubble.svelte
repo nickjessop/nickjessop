@@ -1,12 +1,15 @@
 <script lang="ts">
   let isHovering: boolean = false;
   let isToggled: boolean = false;
+
   function handleMouseOver(e) {
 		isHovering = true;
 	}
+
 	function handleMouseOut(e) {
 		isHovering = false;
 	}
+  
   function toggleContactForm() {
     if (isToggled === false) {
       isToggled = true;
@@ -15,14 +18,31 @@
       isHovering = false;
     }
   }
-  function handleFormSubmit(e: { preventDefault: () => void }) {
-    e.preventDefault();
-    isHovering = false;
-    setTimeout(() => {
-      isToggled = false;
-    }, 4000);
-    console.log("form submitted");
-  }
+
+  let isSubmitting = false;
+
+  const handleSubmit = (e) => {
+    let contactForm = document.getElementById("contact");
+    // @ts-ignore
+    let formData = new FormData(contactForm);
+    isSubmitting = true;
+    return fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // @ts-ignore
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        console.log("Form successfully submitted");
+        isSubmitting = false;
+        // @ts-ignore
+        contactForm.reset();
+      })
+      .catch((error) => {
+        alert(error);
+        isSubmitting = false;
+      });
+  };
 
 </script>
 <div
@@ -48,9 +68,10 @@ on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} on:focus={handleMous
 >
   <form
     name="contact"
+    id="contact"
     autoComplete="off"
     class="relative"
-    onSubmit={handleFormSubmit}
+    on:submit|preventDefault={handleSubmit}
     method="POST"
     data-netlify="true"
     data-netlify-honeypot="bee-field"
@@ -129,12 +150,16 @@ on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} on:focus={handleMous
       </div>
     </div>
     <div class="py-3 text-right">
+    {#if isSubmitting}
+      <div>Submitting</div>
+    {:else}
       <button
         type="submit"
         class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
       >
         Send
       </button>
+    {/if}
     </div>
   </form>
 </div>
