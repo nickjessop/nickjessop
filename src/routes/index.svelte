@@ -1,3 +1,46 @@
+<script context="module" lang="ts">
+  // @ts-ignore
+  import { gql, GraphQLClient } from 'graphql-request'
+
+  export async function load() {
+    const graphcms = new GraphQLClient(
+      // @ts-ignore
+      import.meta.env.VITE_GRAPHCMS_URL,
+      {
+        headers: {},
+      }
+    )
+
+    const query = gql`
+      query PostsIndex {
+        posts {
+          id
+          title
+          slug
+          createdAt
+          description
+        }
+      }
+    `
+
+    const { posts } = await graphcms.request(query)
+
+    return {
+      props: {
+        posts,
+        //projectPosts
+        //portfolioPosts
+      },
+    }
+  }
+
+  
+</script>
+
+<script lang="ts">
+  export let posts: any
+</script>
+
 <svelte:head>
   <title>Nick Jessop</title>
 </svelte:head>
@@ -23,6 +66,10 @@
 				design.
 			</span>
 		</div>
-		<!--  Listings Component -->
+		{#each posts as post}
+      <li>
+        <a href="/portfolio/{post.slug}">{post.title}</a>
+      </li>
+    {/each}
 	</div>
 </section>
