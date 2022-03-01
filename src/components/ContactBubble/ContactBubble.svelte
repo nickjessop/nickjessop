@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   let isHovering: boolean = false;
   let isToggled: boolean = false;
@@ -10,28 +14,26 @@
   function toggleContactForm() {
     if (isToggled === false) {
       isToggled = true;
+      isHovering = true;
     } else {
       isToggled = false;
       isHovering = false;
     }
   }
-
 </script>
 <div
 class="fixed flex items-end  bottom-3 right-3 w-20 h-16 z-50 rounded-md bg-orange-100 border border-orange-200 drop-shadow-xl"
 on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} on:focus={handleMouseOver} on:blur={handleMouseOver} 
 >
 <div class="flex px-2 hover:cursor-pointer" on:click={toggleContactForm}>
-  {#if isHovering}
     <img
       src="/call-me-guy.png"
       alt="Call me"
       width={140}
       height={140}
+      style="display: {isHovering ? 'block' : 'none'}; opacity: {isHovering ? '1' : '0'};"
     />
-    {:else}
-    <img src="/wave-guy.png" alt="Waving" width={140} height={140} />
-  {/if}
+    <img src="/wave-guy.png" alt="Waving" width={140} height={140} style="display: {isHovering ? 'none' : 'block'}; opacity: {isHovering ? '0' : '1'}" />
 </div>
 
 <div
