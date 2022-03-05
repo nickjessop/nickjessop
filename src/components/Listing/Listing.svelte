@@ -1,14 +1,13 @@
 <script lang="ts">
 	import Card from '../Card/Card.svelte';
-	// const listingData = listings?.slice(0, size).map((listing: ProjectData, i: number) => ())}
+	export let size: number;
 	export let listings;
+	const listingData = listings?.slice(0, size);
 	export let type: string;
-
-	console.log(listings, 'in listings component');
 </script>
 
 <div class="flex last:mr-0">
-	{#each listings as listing}
+	{#each listingData as listing}
 		<Card card={listing} {type} />
 	{/each}
 </div>

@@ -5,6 +5,9 @@ interface PostData {
   description?: string;
   year?: string;
   problem?: string;
+  thumbnailColour: {
+    css: string;
+  }
   solution?: string;
   thumbnail: {
     width: number;

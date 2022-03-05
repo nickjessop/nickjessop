@@ -2,12 +2,16 @@
 	import type { PostData } from '../../types/index';
 	export let card: PostData;
 	export let type: string;
-
 	console.log(card, 'inside card component');
 </script>
 
 <div class="w-96 bg-white p-4 mr-6">
-	<div class="w-full flex bg-slate-300">
+	<div
+		class="w-full flex bg-slate-300"
+		style="background-color: {card.thumbnailColour.css != ''
+			? card.thumbnailColour.css
+			: 'rgb(203 213 225)'}"
+	>
 		{#if card.thumbnail}
 			<img
 				src={card.thumbnail.url}

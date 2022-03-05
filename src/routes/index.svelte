@@ -21,6 +21,9 @@
 					slug
 					createdAt
 					description
+					thumbnailColour {
+						css
+					}
 					thumbnail {
 						url
 						height
@@ -33,6 +36,9 @@
 					slug
 					createdAt
 					description
+					thumbnailColour {
+						css
+					}
 					thumbnail {
 						url
 						height
@@ -56,8 +62,6 @@
 <script lang="ts">
 	export let projectPosts: any;
 	export let portfolioPosts: any;
-
-	console.log(projectPosts);
 </script>
 
 <svelte:head>
@@ -80,13 +84,13 @@
 				A selection of portfolio pieces covering both development and design.
 			</span>
 		</div>
-		<Listing listings={portfolioPosts} type="portfolio" />
+		<Listing listings={portfolioPosts} type="portfolio" size={3} />
 	</div>
 	<div class="mt-8 mb-4">
 		<div class="mb-6">
 			<h2 class="text-3xl mb-1 text-slate-900 font-serif">Projects</h2>
 			<span class="text-slate-600"> Various projects I have started over the years. </span>
 		</div>
-		<Listing listings={projectPosts} type="project" />
+		<Listing listings={projectPosts} type="project" size={3} />
 	</div>
 </section>
