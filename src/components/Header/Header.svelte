@@ -1,4 +1,4 @@
-<div class="flex justify-between items-center z-40">
+<div class="flex justify-between items-center z-40 max-w-7xl">
 	<a href="/">
 		<div class="text-3xl bold">
 			<img src="/logo.png" alt="nickjessop.com" style="width: 20%" />

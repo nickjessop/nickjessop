@@ -6,7 +6,7 @@
 	<title>Message Sent | Nick Jessop</title>
 </svelte:head>
 
-<div class="flex flex-col">
+<section class="flex flex-col max-w-7xl justify-center" style="min-height: 400px;">
 	<div class="flex justify-center items-center mb-6">
 		<div class="inline-block bg-green-600 text-white py-1 px-2.5 rounded-full mr-2 font-bold">
 			&#10003;
@@ -20,4 +20,4 @@
 			>Return home</a
 		>
 	</div>
-</div>
+</section>

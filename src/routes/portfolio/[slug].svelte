@@ -63,7 +63,7 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<section class="px-4">
+<section class="max-w-7xl">
 	<h1 class="text-4xl font-bold text-slate-800">{post?.title}</h1>
 	<span class="text-sm text-slate-500 font-bold">{post.year}</span>
 
