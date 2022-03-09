@@ -19,11 +19,10 @@
 			isHovering = false;
 		}
 	}
-	console.log(isToggled);
 </script>
 
 <div
-	class="fixed flex items-end  bottom-3 right-3 w-20 h-16 z-50 rounded-md bg-orange-100 border border-orange-200 drop-shadow-xl"
+	class="fixed flex items-end  bottom-3 right-3 w-20 h-16 z-50 rounded-md bg-sky-100 border border-sky-300 drop-shadow-xl"
 	on:mouseover={handleMouseOver}
 	on:mouseout={handleMouseOut}
 	on:focus={handleMouseOver}
@@ -86,7 +85,7 @@
 						type="text"
 						name="name"
 						id="yourname"
-						class="p-2 shadow-sm border rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 flex-1 block w-full sm:text-sm border-gray-300"
+						class="p-2 shadow-sm border-2 rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 flex-1 block w-full sm:text-sm border-gray-300"
 						placeholder="Name"
 						required
 						data-enable-grammarly="false"
@@ -102,7 +101,7 @@
 						type="email"
 						name="email"
 						id="youremail"
-						class="p-2 shadow-sm border rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 flex-1 block w-full sm:text-sm border-gray-300"
+						class="p-2 shadow-sm border-2 rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 flex-1 block w-full sm:text-sm border-gray-300"
 						placeholder="Email"
 						required
 						data-enable-grammarly="false"
@@ -118,7 +117,7 @@
 						name="message"
 						id="yourmessage"
 						rows={5}
-						class="p-2 shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+						class="p-2 shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 block w-full sm:text-sm border-2 border-gray-300 rounded-md"
 						style="resize: none;"
 						placeholder="Message"
 						required
@@ -129,7 +128,7 @@
 			<div class="py-3 text-right">
 				<button
 					type="submit"
-					class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
+					class="inline-flex justify-center py-2 font-bold px-4 border border-transparent shadow-sm text-sm rounded-md text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
 				>
 					Send
 				</button>

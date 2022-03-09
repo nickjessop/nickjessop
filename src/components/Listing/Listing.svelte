@@ -6,7 +6,7 @@
 	export let type: string;
 </script>
 
-<div class="flex last:mr-0">
+<div class="grid grid-cols-3 gap-8">
 	{#each listingData as listing}
 		<Card card={listing} {type} />
 	{/each}

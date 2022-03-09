@@ -17,7 +17,6 @@
 					createdAt
 					description
 					year
-					type
 					brief {
 						html
 					}
@@ -64,7 +63,7 @@
 </svelte:head>
 
 <section class="px-4">
-	<h1 class="text-4xl font-bold text-slate-800">{post?.title}</h1>
+	<h1 class="text-4xl font-bold text-slate-800">{post.title}</h1>
 	<span class="text-sm text-slate-500 font-bold">{post.year}</span>
 
 	<div class="flex">

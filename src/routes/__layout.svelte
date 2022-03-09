@@ -1,8 +1,7 @@
 <script type="ts">
-	// import Header from "$lib/Header/index.svelte"
+	import '../styles/fonts.css';
 	import '../app.css';
 	import '../styles/global.css';
-	import '../styles/fonts.css';
 	import GridBackground from '/src/components/GridBackground/GridBackground.svelte';
 	import ContactBubble from '/src/components/ContactBubble/ContactBubble.svelte';
 	import Footer from '/src/components/Footer/Footer.svelte';
