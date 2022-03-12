@@ -1,7 +1,7 @@
 <div class="flex justify-between items-center z-40 max-w-7xl">
 	<a href="/">
 		<div class="text-3xl bold">
-			<img src="/logo.png" alt="nickjessop.com" style="width: 20%" />
+			<img src="/logo.png" alt="nickjessop.com" style="width: 150px" />
 		</div>
 	</a>
 	<nav class="flex flex-col font-bold text-slate-800 items-end pr-2 hover:border-sky-500">

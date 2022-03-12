@@ -60,26 +60,26 @@
 </script>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{post?.title} | Nick Jessop</title>
 </svelte:head>
 
 <section class="max-w-7xl">
 	<h1 class="text-4xl font-bold text-slate-800">{post?.title}</h1>
-	<span class="text-sm text-slate-500 font-bold">{post.year}</span>
+	<span class="text-sm text-slate-500 font-bold">{post?.year}</span>
 
-	<div class="flex">
-		<div class="basis-3/4 mr-72">
+	<div class="flex flex-col sm:flex-row">
+		<div class="sm:basis-3/4 sm:mr-48 md:mr-72">
 			<div class="mt-4">
 				<h2 class="text-sm uppercase font-bold text-slate-600">Brief</h2>
-				<div class="text-slate-800">{@html post.brief.html}</div>
+				<div class="text-slate-800">{@html post?.brief.html}</div>
 			</div>
 			<div class="mt-4">
 				<h2 class="text-sm uppercase font-bold text-slate-600">Solution</h2>
-				<div class="text-slate-800">{@html post.solution.html}</div>
+				<div class="text-slate-800">{@html post?.solution.html}</div>
 			</div>
 		</div>
-		<div class="basis-1/4 pr-2">
-			{#if post.projectMetadata}
+		<div class="sm:basis-1/4 pr-2 mt-8 sm:mt-0">
+			{#if post?.projectMetadata}
 				{#each post.projectMetadata as { description, title }}
 					<div class="mb-4">
 						<div class="pb-1 border-b border-slate-400 text-slate-600 uppercase text-sm font-bold">
@@ -94,9 +94,9 @@
 	<div class="mt-24">
 		<h2 class="text-sm uppercase font-bold text-slate-600">Project Images</h2>
 		<div class="flex flex-col mt-4">
-			{#each post.projectImages as { image, description, title }}
-				<div class="flex w-full mb-8">
-					<div class="mr-12 basis-3/4">
+			{#each post?.projectImages as { image, description, title }}
+				<div class="flex flex-col sm:flex-row w-full mb-8">
+					<div class="sm:mr-12 sm:basis-3/4">
 						{#if image != null}
 							<img
 								src={image.url}

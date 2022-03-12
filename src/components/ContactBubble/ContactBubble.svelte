@@ -22,7 +22,7 @@
 </script>
 
 <div
-	class="fixed flex items-end  bottom-3 right-3 w-20 h-16 z-50 rounded-md bg-sky-100 border border-sky-300 drop-shadow-xl"
+	class="fixed flex items-end bottom-3 right-3 w-20 h-16 z-50 rounded-md bg-sky-100 border border-sky-00 drop-shadow-xl"
 	on:mouseover={handleMouseOver}
 	on:mouseout={handleMouseOut}
 	on:focus={handleMouseOver}
@@ -51,7 +51,7 @@
 		/>
 	</div>
 	<div
-		class="absolute w-[400px] -left-[410px] p-4 bg-white rounded-md drop-shadow-sm transition delay-100 duration-300 ease-in-out"
+		class="absolute w-[250px] -left-[260px] sm:w-[400px] sm:-left-[410px] p-4 bg-white rounded-md drop-shadow-sm transition delay-100 duration-300 ease-in-out"
 		style="visibility: {isToggled ? 'visible' : 'hidden'}; opacity: {isToggled ? '1' : '0'}"
 	>
 		<form
