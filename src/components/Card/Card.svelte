@@ -6,7 +6,7 @@
 
 <div>
 	<div
-		class="bg-white p-4 border-2 border-slate-800 rounded-lg"
+		class="bg-white p-4 border-2 border-slate-800 rounded-lg h-full"
 		style="box-shadow: {card.thumbnailColour.css} 6px 6px 0px 0px;"
 	>
 		<a href={`/${type}/${card.slug}`}>

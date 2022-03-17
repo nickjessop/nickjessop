@@ -22,7 +22,7 @@
 </script>
 
 <div
-	class="fixed flex items-end bottom-3 right-3 w-20 h-16 z-50 rounded-md bg-sky-100 border border-sky-00 drop-shadow-xl"
+	class="fixed flex items-end bottom-3 right-3 w-20 h-16 z-50 rounded-md bg-slate-300 border border-slate-400 drop-shadow-xl"
 	on:mouseover={handleMouseOver}
 	on:mouseout={handleMouseOut}
 	on:focus={handleMouseOver}

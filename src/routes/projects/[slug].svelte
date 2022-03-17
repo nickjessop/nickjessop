@@ -70,11 +70,11 @@
 		<div class="sm:basis-3/4 sm:mr-48 md:mr-72">
 			<div class="mt-4">
 				<h2 class="text-sm uppercase font-bold text-slate-600">Brief</h2>
-				<div class="text-slate-800">{@html post?.brief.html}</div>
+				<div class="text-slate-800 content">{@html post?.brief.html}</div>
 			</div>
 			<div class="mt-4">
 				<h2 class="text-sm uppercase font-bold text-slate-600">Solution</h2>
-				<div class="text-slate-800">{@html post?.solution.html}</div>
+				<div class="text-slate-800 content">{@html post?.solution.html}</div>
 			</div>
 		</div>
 		<div class="sm:basis-1/4 pr-2 mt-8 sm:mt-0">

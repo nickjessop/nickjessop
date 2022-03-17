@@ -15,7 +15,7 @@
 
 		const query = gql`
 			query PostsIndex {
-				portfolioPosts: posts(where: { type: Portfolio }) {
+				portfolioPosts: posts(where: { type: Portfolio }, orderBy: year_DESC) {
 					id
 					title
 					slug
@@ -30,7 +30,7 @@
 						width
 					}
 				}
-				projectPosts: posts(where: { type: Project }) {
+				projectPosts: posts(where: { type: Project }, orderBy: year_DESC) {
 					id
 					title
 					slug
@@ -94,7 +94,7 @@
 			<h2 class="text-3xl mb-1 text-slate-800 font-serif font-bold">Projects</h2>
 			<span class="text-slate-600"> Various projects I have started over the years. </span>
 		</div>
-		<Listing listings={projectPosts} type="project" size={3} />
+		<Listing listings={projectPosts} type="projects" size={3} />
 		<a href="/projects" class="text-xl font-semibold text-sky-600 hover:text-sky-700 mt-6 block">
 			View all &rarr;
 		</a>
