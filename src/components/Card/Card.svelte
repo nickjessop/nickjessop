@@ -17,12 +17,14 @@
 					: 'rgb(203 213 225)'}"
 			>
 				{#if card.thumbnail}
-					<img
-						src={card.thumbnail.url}
-						alt={card?.title}
-						height={card.thumbnail.height}
-						width={card.thumbnail.width}
-					/>
+					<div>
+						<img
+							src={card.thumbnail.url}
+							alt={card?.title}
+							height={card.thumbnail.height}
+							width={card.thumbnail.width}
+						/>
+					</div>
 				{/if}
 			</div>
 			<div class="mt-4">
