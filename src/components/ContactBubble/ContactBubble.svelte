@@ -62,6 +62,7 @@
 			action="/success"
 			data-netlify="true"
 			data-netlify-honeypot="bee-field"
+			netlify
 		>
 			<input type="hidden" name="form-name" value="contact" />
 			<p class="hidden">
