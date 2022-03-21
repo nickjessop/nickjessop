@@ -4,7 +4,7 @@
 	export let type: string;
 </script>
 
-<div>
+<div class="relative top-0 hover:-top-[5px] ease-in-out duration-100">
 	<div
 		class="bg-white p-4 border-2 border-transparent rounded-lg h-full"
 		style="box-shadow: {card.thumbnailColour.css} 6px 6px 0px 0px;"
