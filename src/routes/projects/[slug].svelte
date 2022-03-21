@@ -91,26 +91,31 @@
 		</div>
 	</div>
 	<div class="mt-24">
-		<h2 class="text-sm uppercase font-bold text-slate-600">Project Images</h2>
-		<div class="flex flex-col mt-4">
-			{#each post?.projectImages as { image, description, title }}
-				<div class="flex w-full mb-8">
-					<div class="mr-12 basis-3/4">
-						{#if image != null}
-							<img
-								src={image.url}
-								width={image.width}
-								height={image.height}
-								alt={title}
-								class="shadow-sm"
-							/>
-						{/if}
+		{#if post?.projectImages}
+			<h2 class="text-sm uppercase font-bold text-slate-600">Project Images</h2>
+			<div class="flex flex-col mt-4">
+				{#each post?.projectImages as { image, description, title }}
+					<div class="flex flex-col sm:flex-row w-full mb-8">
+						<div class="sm:mr-12 sm:basis-3/4">
+							{#if image != null}
+								<img
+									src={image.url}
+									width={image.width}
+									height={image.height}
+									alt={title}
+									class="shadow-sm"
+								/>
+							{/if}
+						</div>
+						<div
+							class="mt-4 pl-2 border-l-2 border-slate-500 basis-1/4"
+							style="height: fit-content"
+						>
+							<p class="text-slate-500">{description}</p>
+						</div>
 					</div>
-					<div class="mt-4 pl-2 border-l-2 border-slate-500 basis-1/4" style="height: fit-content">
-						<p class="text-slate-500">{description}</p>
-					</div>
-				</div>
-			{/each}
-		</div>
+				{/each}
+			</div>
+		{/if}
 	</div>
 </section>
