@@ -99,4 +99,44 @@
 			View all &rarr;
 		</a>
 	</div>
+	<div class="mt-8 mb-4">
+		<div class="mb-6">
+			<h2 class="text-3xl mb-1 text-slate-800 font-serif font-bold">Writings</h2>
+			<span class="text-slate-600">
+				Articles I have written throughout my professional career.
+			</span>
+		</div>
+		<div class="mt-6">
+			<a
+				href="https://media.graphcms.com/eGukGGiROeLNm4dLzj8L"
+				target="_blank"
+				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
+				><h3 class="inline">Directory Ads - Feature Overview</h3></a
+			>
+		</div>
+		<div class="mt-6">
+			<a
+				href="https://media.graphcms.com/WsrRTPDVTJKGcU3htRiM"
+				target="_blank"
+				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
+				><h3 class="inline">Blue Dot - Feature Overview</h3></a
+			>
+		</div>
+		<div class="mt-6">
+			<a
+				href="https://media.graphcms.com/Bnfy7ZJXRdiAeD2AcpRT"
+				target="_blank"
+				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
+				><h3 class="inline">Smart Labels - Feature Overview</h3></a
+			>
+		</div>
+		<div class="mt-6">
+			<a
+				href="https://media.graphcms.com/4bQFfpQvS0e5ktKL8UIE"
+				target="_blank"
+				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
+				><h3 class="inline">Directory Voice Assist - Feature Overview</h3></a
+			>
+		</div>
+	</div>
 </section>
