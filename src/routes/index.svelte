@@ -72,7 +72,7 @@
 	<div class="w-full sm:w-3/4 md:w-2/4 xl:w-1/3 mb-2">
 		<img src="/logo.png" alt="nickjessop.com" style="width: 50%" />
 		<p class="mt-4">
-			I&apos;m a designer who takes a hollistic approach to building digital products using a
+			I&apos;m a designer who takes a holistic approach to building digital products using a
 			cross-disciplinary skill set in design, development, and business. I&apos;ve launched my own
 			projects, built things for others, and worked in both design and product management roles.
 		</p>
