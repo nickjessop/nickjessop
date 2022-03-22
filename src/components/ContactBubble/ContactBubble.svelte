@@ -61,12 +61,9 @@
 			method="POST"
 			action="/success"
 			data-netlify="true"
-			data-netlify-honeypot="extra-field"
 		>
 			<input type="hidden" name="form-name" value="contact" />
-			<p class="hidden">
-				<input name="extra-field" aria-labelledby="contact-form-extra-field" />
-			</p>
+
 			<div class="flex items-center justify-between">
 				<h2 class="text-lg font-bold text-gray-600 py-2">Contact me</h2>
 				<div
