@@ -54,14 +54,7 @@
 		class="absolute w-[250px] -left-[260px] sm:w-[400px] sm:-left-[410px] p-4 bg-white rounded-md drop-shadow-sm transition delay-100 duration-300 ease-in-out"
 		style="visibility: {isToggled ? 'visible' : 'hidden'}; opacity: {isToggled ? '1' : '0'}"
 	>
-		<form
-			name="contact"
-			autoComplete="off"
-			class="relative"
-			method="POST"
-			action="/success"
-			data-netlify="true"
-		>
+		<form name="contact" class="relative" method="POST" action="/success" data-netlify="true">
 			<input type="hidden" name="form-name" value="contact" />
 
 			<div class="flex items-center justify-between">
