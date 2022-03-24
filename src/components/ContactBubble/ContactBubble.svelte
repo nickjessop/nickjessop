@@ -81,11 +81,10 @@
 					<input
 						type="text"
 						name="name"
-						id="yourname"
+						id="name"
 						class="p-2 shadow-sm border-2 rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 flex-1 block w-full sm:text-sm border-gray-300"
 						placeholder="Name"
 						required
-						data-enable-grammarly="false"
 					/>
 				</div>
 			</div>
@@ -97,11 +96,10 @@
 					<input
 						type="email"
 						name="email"
-						id="youremail"
+						id="email"
 						class="p-2 shadow-sm border-2 rounded-md focus:outline-none focus:ring-sky-500 focus:border-sky-500 flex-1 block w-full sm:text-sm border-gray-300"
 						placeholder="Email"
 						required
-						data-enable-grammarly="false"
 					/>
 				</div>
 			</div>
@@ -112,13 +110,12 @@
 				<div class="mt-1 flex rounded-md shadow-sm">
 					<textarea
 						name="message"
-						id="yourmessage"
+						id="message"
 						rows={5}
 						class="p-2 shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 block w-full sm:text-sm border-2 border-gray-300 rounded-md"
 						style="resize: none;"
 						placeholder="Message"
 						required
-						data-enable-grammarly="false"
 					/>
 				</div>
 			</div>
