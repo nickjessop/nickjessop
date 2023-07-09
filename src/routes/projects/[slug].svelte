@@ -63,7 +63,7 @@
 	<title>{post?.title} | Nick Jessop</title>
 </svelte:head>
 
-<section class="max-w-7xl">
+<section class="max-w-7xl bg-white rounded-lg p-8 pt-12 shadow-sm">
 	<h1 class="text-4xl font-bold text-slate-800">{post?.title}</h1>
 	<span class="text-sm text-slate-500 font-bold">{post?.year}</span>
 
