@@ -1,3 +1,7 @@
+<script>
+	export const prerender = true;
+</script>
+
 <svelte:head>
 	<title>Contact | Nick Jessop</title>
 </svelte:head>
@@ -14,8 +18,8 @@
 		for your users. Reach out today, and let's discuss how I can help you achieve your goals.
 	</p>
 	<div class="mt-8">
-		<form name="contact" class="relative" method="POST" action="/success" data-netlify="true">
-			<input type="hidden" name="form-name" value="contact" />
+		<form name="contact-form" method="POST" action="/success" data-netlify="true">
+			<input type="hidden" name="form-name" value="contact-form" />
 
 			<div class="mb-2">
 				<div class="mt-1">
