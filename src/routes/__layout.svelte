@@ -15,7 +15,7 @@
 	<Header />
 {/if}
 
-<main class="h-full text-gray-800 relative z-10 pt-16">
+<main class="h-full text-gray-800 relative z-10 mt-12">
 	<slot />
 </main>
 

@@ -52,6 +52,6 @@
 </svelte:head>
 
 <section class="max-w-7xl">
-	<h1 class="font-serif text-3xl text-slate-800 mb-4 font-bold">Projects</h1>
+	<h1 class="text-3xl text-slate-800 mb-4 font-bold">Projects</h1>
 	<Listing listings={projectPosts} type="projects" size={9} />
 </section>

@@ -79,10 +79,7 @@
 	</div>
 	<div class="mt-8 mb-4">
 		<div class="mb-6">
-			<h2 class="text-3xl mb-1 text-slate-800 font-serif font-bold">Portfolio</h2>
-			<span class="text-slate-600">
-				A selection of portfolio pieces covering both development and design.
-			</span>
+			<h2 class="text-3xl mb-1 text-slate-800 font-bold">Portfolio</h2>
 		</div>
 		<Listing listings={portfolioPosts} type="portfolio" size={3} />
 		<a href="/portfolio" class="text-xl font-semibold text-sky-600 hover:text-sky-700 mt-6 block">
@@ -91,8 +88,7 @@
 	</div>
 	<div class="mt-8 mb-4">
 		<div class="mb-6">
-			<h2 class="text-3xl mb-1 text-slate-800 font-serif font-bold">Projects</h2>
-			<span class="text-slate-600"> Various projects I have started over the years. </span>
+			<h2 class="text-3xl mb-1 text-slate-800 font-bold">Projects</h2>
 		</div>
 		<Listing listings={projectPosts} type="projects" size={3} />
 		<a href="/projects" class="text-xl font-semibold text-sky-600 hover:text-sky-700 mt-6 block">
@@ -101,10 +97,7 @@
 	</div>
 	<div class="mt-8 mb-4">
 		<div class="mb-6">
-			<h2 class="text-3xl mb-1 text-slate-800 font-serif font-bold">Writings</h2>
-			<span class="text-slate-600">
-				Articles I have written throughout my professional career.
-			</span>
+			<h2 class="text-3xl mb-1 text-slate-800 font-bold">Articles</h2>
 		</div>
 		<div class="mt-6">
 			<a
