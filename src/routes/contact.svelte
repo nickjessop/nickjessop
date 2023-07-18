@@ -15,7 +15,7 @@
 		Looking for a freelance professional who can bring your ideas to life? With expertise in web
 		development, UX design, and product management, I offer a unique set of skills that can make
 		your digital presence stand out. Let's collaborate and create high quality product experiences
-		for your users. Reach out today, and let's discuss how I can help you achieve your goals.
+		for your users. Reach out today to discuss how I can help you achieve your goals.
 	</p>
 	<div class="mt-8">
 		<form name="contact-form" method="POST" action="/success" data-netlify="true">

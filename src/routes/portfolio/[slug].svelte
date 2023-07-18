@@ -91,7 +91,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="mt-24">
+	<div class="mt-8 pt-8">
 		{#if post?.projectImages != ''}
 			<h2 class="text-sm uppercase font-bold text-slate-600">Project Images</h2>
 			<div class="flex flex-col mt-4">

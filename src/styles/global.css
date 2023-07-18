@@ -3,7 +3,6 @@ body {
 	padding: 0;
 	margin: 0;
 	/* background: #f4f2ee; */
-	/* background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% ); */
 	background-image: radial-gradient( circle at -2.9% 12.9%, rgb(255, 209, 255, 0.2) 0%, rgb(250, 208, 196, 0.2) 46.4%, rgba(163,203,247,0.2) 100.7% );
 	height: 100%;
 	overflow: auto;

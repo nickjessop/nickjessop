@@ -82,7 +82,10 @@
 			<h2 class="text-3xl mb-1 text-slate-800 font-bold">Portfolio</h2>
 		</div>
 		<Listing listings={portfolioPosts} type="portfolio" size={3} />
-		<a href="/portfolio" class="text-xl font-semibold text-sky-600 hover:text-sky-700 mt-6 block">
+		<a
+			href="/portfolio"
+			class="text-xl font-semibold text-primary-500 hover:text-primary-600 mt-6 block"
+		>
 			View all &rarr;
 		</a>
 	</div>
@@ -91,7 +94,10 @@
 			<h2 class="text-3xl mb-1 text-slate-800 font-bold">Projects</h2>
 		</div>
 		<Listing listings={projectPosts} type="projects" size={3} />
-		<a href="/projects" class="text-xl font-semibold text-sky-600 hover:text-sky-700 mt-6 block">
+		<a
+			href="/projects"
+			class="text-xl font-semibold text-primary-500 hover:text-primary-600 mt-6 block"
+		>
 			View all &rarr;
 		</a>
 	</div>
@@ -103,32 +109,80 @@
 			<a
 				href="https://media.graphcms.com/eGukGGiROeLNm4dLzj8L"
 				target="_blank"
-				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
-				><h3 class="inline">Directory Ads - Feature Overview</h3></a
+				class="inline-flex text-xl font-semibold bg-white p-4 border-2 border-transparent rounded-lg  text-primary-500 hover:text-primary-600"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
+					<path
+						d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3M19 19H5V5H12V3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12H19V19Z"
+						fill="#A0A0A0"
+					/>
+				</svg>
+				<h3 class="pl-2 inline">Directory Ads - Feature Overview</h3></a
 			>
 		</div>
 		<div class="mt-6">
 			<a
 				href="https://media.graphcms.com/WsrRTPDVTJKGcU3htRiM"
 				target="_blank"
-				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
-				><h3 class="inline">Blue Dot - Feature Overview</h3></a
+				class="inline-flex text-xl font-semibold bg-white p-4 border-2 border-transparent rounded-lg  text-primary-500 hover:text-primary-600"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
+					<path
+						d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3M19 19H5V5H12V3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12H19V19Z"
+						fill="#A0A0A0"
+					/>
+				</svg>
+				<h3 class="pl-2 inline">Blue Dot - Feature Overview</h3></a
 			>
 		</div>
 		<div class="mt-6">
 			<a
 				href="https://media.graphcms.com/Bnfy7ZJXRdiAeD2AcpRT"
 				target="_blank"
-				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
-				><h3 class="inline">Smart Labels - Feature Overview</h3></a
+				class="inline-flex text-xl font-semibold bg-white p-4 border-2 border-transparent rounded-lg  text-primary-500 hover:text-primary-600"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
+					<path
+						d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3M19 19H5V5H12V3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12H19V19Z"
+						fill="#A0A0A0"
+					/>
+				</svg>
+				<h3 class="pl-2 inline">Smart Labels - Feature Overview</h3></a
 			>
 		</div>
 		<div class="mt-6">
 			<a
 				href="https://media.graphcms.com/4bQFfpQvS0e5ktKL8UIE"
 				target="_blank"
-				class="text-xl font-semibold  text-sky-600 hover:text-sky-700"
-				><h3 class="inline">Directory Voice Assist - Feature Overview</h3></a
+				class="inline-flex text-xl font-semibold bg-white p-4 border-2 border-transparent rounded-lg  text-primary-500 hover:text-primary-600"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
+					<path
+						d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3M19 19H5V5H12V3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12H19V19Z"
+						fill="#A0A0A0"
+					/>
+				</svg>
+				<h3 class="pl-2 inline">Directory Voice Assist - Feature Overview</h3></a
 			>
 		</div>
 	</div>

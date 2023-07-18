@@ -21,6 +21,12 @@ module.exports = {
 				'10xl': '9rem',
 				'11xl': '12rem',
 				'12xl': '15rem'
+			},
+			colors: {
+				primary: {
+					500: '#7E0183',
+					600: '#6B006F'
+				}
 			}
 		}
 	},
